@@ -1,0 +1,1 @@
+(() => {const bar=document.getElementById('bar'),percent=document.getElementById('percent'),speed=document.getElementById('speed');if(!bar||!percent||!speed)return;let n=72;setInterval(()=>{n+=Math.floor(Math.random()*4)+1;if(n>=99)n=62;bar.style.width=n+'%';percent.textContent=n+'%';speed.textContent=(5.2+Math.random()*5.6).toFixed(1)+' MB/s';},1400);})();
